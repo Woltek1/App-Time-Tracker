@@ -14,7 +14,7 @@ json_path = 'time_data.json'
 is_active.set()
 
 last_activity_time = time.time()
-inactive_time_limit = 3
+inactive_time_limit = 120
 
 if os.path.exists(json_path):
     with open(json_path, 'r') as f:
